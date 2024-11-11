@@ -1,0 +1,114 @@
+/* Styles de base pour le body : fond, police, couleur, taille du texte, et marge supérieure */
+body {
+  background-color: rgb(220, 220, 220);
+  font-family: Ubuntu;
+  color: rgb(99, 85, 85);
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+/* Couleur personnalisée pour les titres h2 */
+h2 {
+  color: rgb(142, 119, 119);
+}
+
+/* Style des liens avec une couleur spécifique et sans soulignement */
+a {
+  text-decoration: none;
+  color: rgb(68, 88, 213);
+  font-weight: bold
+}
+
+/* changement de couleur au survol*/
+a :hover{
+  color: purple;
+}
+
+/* Centre et ajuste la largeur du container */
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* Centrage du texte et espacement supplémentaire en bas */
+.text-center {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Carte avec fond blanc, bordure et padding */
+.card {
+  background: white;
+  padding: 30px;
+  border: 1px solid lightgrey;
+}
+
+/* Images en cercle */
+.img-circle {
+  border-radius: 50%;
+}
+
+/* Bouton avec couleur de fond et coins arrondis */
+.btn{
+  background-color: rgb(149, 173, 234);
+  border-radius: 4px;
+  padding: 16px 24px;
+}
+
+/* Style pour les paragraphes de la section intro */
+#intro p{
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+/* Liste en ligne avec espacement entre les éléments */
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+
+.list-inline{
+  padding-left: 0px; /* Supprime le padding gauche de la liste */
+}
+
+
+/* Icônes du pied de page avec une taille spécifique */
+#footer li{
+  font-size: 40px;
+}
+
+.btn:hover {
+  background-color: purple;
+}
+
+
+/* Pour un écran < 720px, cette classe CSS s'applique */
+@media (max-width: 720px) {
+  /* Adaptation de la largeur du conteneur et des tailles de police pour petits écrans */
+  .container {
+    width: 500px;
+  }
+  .btn {
+    padding: 10px 10px;
+  }
+
+  #intro p {
+    font-size: 14px;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+  #footer li{
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+  .card {
+    padding: 20px;
+  }
+}
